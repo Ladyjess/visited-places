@@ -1,0 +1,20 @@
+<h1>Places Visited</h1>
+
+<p> Here are your places: </p>
+
+<ul>
+
+  <% @input.each() do |place| %>
+  <li><%= place.place_name() %> </li>
+  <% end %>
+</ul>
+
+<p>Create a new task:</p>
+
+<form action="input" method="post">
+  <label for="location">Places Visited</label>
+  <input id="location" name="location" type="text">
+
+  <button type="submit">Add a place!</button>
+
+</form>
